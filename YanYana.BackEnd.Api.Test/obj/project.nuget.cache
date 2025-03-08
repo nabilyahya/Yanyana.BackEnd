@@ -1,8 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "EAlVZFw6Fl0=",
+  "dgSpecHash": "NVkrd60PEaA=",
   "success": true,
   "projectFilePath": "C:\\Users\\nabil\\source\\repos\\Yanyana.BackEnd\\YanYana.BackEnd.Api.Test\\Yanyana.BackEnd.Api.Test.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\nabil\\.nuget\\packages\\xunit\\2.9.3\\xunit.2.9.3.nupkg.sha512",
+    "C:\\Users\\nabil\\.nuget\\packages\\xunit.abstractions\\2.0.3\\xunit.abstractions.2.0.3.nupkg.sha512",
+    "C:\\Users\\nabil\\.nuget\\packages\\xunit.analyzers\\1.18.0\\xunit.analyzers.1.18.0.nupkg.sha512",
+    "C:\\Users\\nabil\\.nuget\\packages\\xunit.assert\\2.9.3\\xunit.assert.2.9.3.nupkg.sha512",
+    "C:\\Users\\nabil\\.nuget\\packages\\xunit.core\\2.9.3\\xunit.core.2.9.3.nupkg.sha512",
+    "C:\\Users\\nabil\\.nuget\\packages\\xunit.extensibility.core\\2.9.3\\xunit.extensibility.core.2.9.3.nupkg.sha512",
+    "C:\\Users\\nabil\\.nuget\\packages\\xunit.extensibility.execution\\2.9.3\\xunit.extensibility.execution.2.9.3.nupkg.sha512",
+    "C:\\Users\\nabil\\.nuget\\packages\\xunit.runner.utility\\2.9.3\\xunit.runner.utility.2.9.3.nupkg.sha512"
+  ],
   "logs": []
 }

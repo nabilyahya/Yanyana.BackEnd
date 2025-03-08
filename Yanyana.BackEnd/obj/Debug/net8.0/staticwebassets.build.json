@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "ZtQVAT05m9wtOA1lzUkvcRUAskytInAzmWoQa3gbe+A=",
+  "Source": "Yanyana.BackEnd.Api",
+  "BasePath": "_content/Yanyana.BackEnd.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

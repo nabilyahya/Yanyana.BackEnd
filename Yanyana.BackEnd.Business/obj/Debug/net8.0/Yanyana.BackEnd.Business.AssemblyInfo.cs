@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Yanyana.BackEnd.Business")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+17fadd9417542870236876e750e69da740e9da35")]
 [assembly: System.Reflection.AssemblyProductAttribute("Yanyana.BackEnd.Business")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Yanyana.BackEnd.Business")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
