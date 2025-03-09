@@ -1,0 +1,15 @@
+C:\Users\nabil\source\repos\Yanyana.BackEnd\Yanyana.BackEnd.Core\bin\Debug\net8.0\Yanyana.BackEnd.Core.deps.json
+C:\Users\nabil\source\repos\Yanyana.BackEnd\Yanyana.BackEnd.Core\bin\Debug\net8.0\Yanyana.BackEnd.Core.runtimeconfig.json
+C:\Users\nabil\source\repos\Yanyana.BackEnd\Yanyana.BackEnd.Core\bin\Debug\net8.0\Yanyana.BackEnd.Core.dll
+C:\Users\nabil\source\repos\Yanyana.BackEnd\Yanyana.BackEnd.Core\bin\Debug\net8.0\Yanyana.BackEnd.Core.pdb
+C:\Users\nabil\source\repos\Yanyana.BackEnd\Yanyana.BackEnd.Core\obj\Debug\net8.0\Yanyana.BackEnd.Core.csproj.AssemblyReference.cache
+C:\Users\nabil\source\repos\Yanyana.BackEnd\Yanyana.BackEnd.Core\obj\Debug\net8.0\Yanyana.BackEnd.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nabil\source\repos\Yanyana.BackEnd\Yanyana.BackEnd.Core\obj\Debug\net8.0\Yanyana.BackEnd.Core.AssemblyInfoInputs.cache
+C:\Users\nabil\source\repos\Yanyana.BackEnd\Yanyana.BackEnd.Core\obj\Debug\net8.0\Yanyana.BackEnd.Core.AssemblyInfo.cs
+C:\Users\nabil\source\repos\Yanyana.BackEnd\Yanyana.BackEnd.Core\obj\Debug\net8.0\Yanyana.BackEnd.Core.csproj.CoreCompileInputs.cache
+C:\Users\nabil\source\repos\Yanyana.BackEnd\Yanyana.BackEnd.Core\obj\Debug\net8.0\Yanyana.BackEnd.Core.sourcelink.json
+C:\Users\nabil\source\repos\Yanyana.BackEnd\Yanyana.BackEnd.Core\obj\Debug\net8.0\Yanyana.BackEnd.Core.dll
+C:\Users\nabil\source\repos\Yanyana.BackEnd\Yanyana.BackEnd.Core\obj\Debug\net8.0\refint\Yanyana.BackEnd.Core.dll
+C:\Users\nabil\source\repos\Yanyana.BackEnd\Yanyana.BackEnd.Core\obj\Debug\net8.0\Yanyana.BackEnd.Core.pdb
+C:\Users\nabil\source\repos\Yanyana.BackEnd\Yanyana.BackEnd.Core\obj\Debug\net8.0\Yanyana.BackEnd.Core.genruntimeconfig.cache
+C:\Users\nabil\source\repos\Yanyana.BackEnd\Yanyana.BackEnd.Core\obj\Debug\net8.0\ref\Yanyana.BackEnd.Core.dll
