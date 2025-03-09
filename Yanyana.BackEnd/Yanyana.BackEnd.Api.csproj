@@ -23,4 +23,9 @@
     <Folder Include="Middlewares\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Yanyana.BackEnd.Business\Yanyana.BackEnd.Business.csproj" />
+    <ProjectReference Include="..\Yanyana.BackEnd.Core\Yanyana.BackEnd.Core.csproj" />
+  </ItemGroup>
+
 </Project>

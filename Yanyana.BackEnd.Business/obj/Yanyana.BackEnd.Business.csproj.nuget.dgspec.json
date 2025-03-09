@@ -33,6 +33,99 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\nabil\\source\\repos\\Yanyana.BackEnd\\Yanyana.BackEnd.Data\\Yanyana.BackEnd.Data.csproj": {
+                "projectPath": "C:\\Users\\nabil\\source\\repos\\Yanyana.BackEnd\\Yanyana.BackEnd.Data\\Yanyana.BackEnd.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[14.0.0, )"
+            },
+            "AutoMapper.Collection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "Autofac": {
+              "target": "Package",
+              "version": "[8.2.0, )"
+            },
+            "Autofac.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[10.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\nabil\\source\\repos\\Yanyana.BackEnd\\Yanyana.BackEnd.Core\\Yanyana.BackEnd.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\nabil\\source\\repos\\Yanyana.BackEnd\\Yanyana.BackEnd.Core\\Yanyana.BackEnd.Core.csproj",
+        "projectName": "Yanyana.BackEnd.Core",
+        "projectPath": "C:\\Users\\nabil\\source\\repos\\Yanyana.BackEnd\\Yanyana.BackEnd.Core\\Yanyana.BackEnd.Core.csproj",
+        "packagesPath": "C:\\Users\\nabil\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nabil\\source\\repos\\Yanyana.BackEnd\\Yanyana.BackEnd.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\nabil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nexusrepo.natuurenbos.be/repository/anb-nuget-local/": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -67,6 +160,111 @@
             "Autofac.Extensions.DependencyInjection": {
               "target": "Package",
               "version": "[10.0.0, )"
+            },
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.5.1, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\nabil\\source\\repos\\Yanyana.BackEnd\\Yanyana.BackEnd.Data\\Yanyana.BackEnd.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\nabil\\source\\repos\\Yanyana.BackEnd\\Yanyana.BackEnd.Data\\Yanyana.BackEnd.Data.csproj",
+        "projectName": "Yanyana.BackEnd.Data",
+        "projectPath": "C:\\Users\\nabil\\source\\repos\\Yanyana.BackEnd\\Yanyana.BackEnd.Data\\Yanyana.BackEnd.Data.csproj",
+        "packagesPath": "C:\\Users\\nabil\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nabil\\source\\repos\\Yanyana.BackEnd\\Yanyana.BackEnd.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\nabil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nexusrepo.natuurenbos.be/repository/anb-nuget-local/": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\nabil\\source\\repos\\Yanyana.BackEnd\\Yanyana.BackEnd.Core\\Yanyana.BackEnd.Core.csproj": {
+                "projectPath": "C:\\Users\\nabil\\source\\repos\\Yanyana.BackEnd\\Yanyana.BackEnd.Core\\Yanyana.BackEnd.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.100"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[14.0.0, )"
+            },
+            "AutoMapper.Collection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "Autofac": {
+              "target": "Package",
+              "version": "[8.2.0, )"
+            },
+            "Autofac.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[10.0.0, )"
+            },
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.5.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.2, )"
             },
             "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
