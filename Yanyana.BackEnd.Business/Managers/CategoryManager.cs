@@ -15,7 +15,7 @@ namespace Yanyana.BackEnd.Business.Managers
         Task<List<Category>> GetAllCategoriesAsync();
         Task<Category?> GetCategoryByIdAsync(int id);
         Task<Category> CreateCategoryAsync(Category category);
-        Task UpdateCategoryAsync(Category category);
+        Task<bool> UpdateCategoryAsync(int id ,Category category);
         Task DeleteCategoryAsync(int id);
     }
     public class CategoryManager : ICategoryManager
@@ -34,18 +34,44 @@ namespace Yanyana.BackEnd.Business.Managers
             return await _yanContext.Categories.FindAsync(id) ??
              throw new ArgumentNullException(nameof(id), "Category not found.");
         }
-        public async Task<Category> CreateCategoryAsync(Category category)
-        {
-            _yanContext.Categories.Add(category);
-            await _yanContext.SaveChangesAsync();
-            return category;
-        }
-        public async Task UpdateCategoryAsync(Category category)
+        public async Task<Category?> CreateCategoryAsync(Category category)
         {
             ArgumentNullException.ThrowIfNull(category, nameof(category));
-            // Optionally, you can verify the category exists before updating.
-            _yanContext.Categories.Update(category);
+
+            bool categoryExists = await _yanContext.Categories
+                .AnyAsync(c => c.Name == category.Name);
+
+            if (categoryExists)
+            {
+                return null; 
+            }
+
+            _yanContext.Categories.Add(category);
             await _yanContext.SaveChangesAsync();
+
+            return category;
+        }
+        public async Task<bool> UpdateCategoryAsync(int id, Category category)
+        {
+            ArgumentNullException.ThrowIfNull(category, nameof(category));
+
+            if (category.CategoryId != id)
+            {
+                return false; 
+            }
+
+            var existingCategory = await _yanContext.Categories.FindAsync(id);
+            if (existingCategory == null)
+            {
+                return false; 
+            }
+
+            existingCategory.Name = category.Name;
+            existingCategory.Description = category.Description;
+
+            _yanContext.Categories.Update(existingCategory);
+            await _yanContext.SaveChangesAsync();
+            return true;
         }
         public async Task DeleteCategoryAsync(int id)
         {

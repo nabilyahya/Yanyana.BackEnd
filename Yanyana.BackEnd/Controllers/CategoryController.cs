@@ -36,11 +36,14 @@ namespace Yanyana.BackEnd.Api.Controllers
         public async Task<IActionResult> UpdateCategory(int id, Category category)
         {
 
-            await _categoryManager.UpdateCategoryAsync(category);
+            var result = await _categoryManager.UpdateCategoryAsync(id, category);
+            if (!result)
+            {
+                return BadRequest(); 
+            }
             return NoContent();
         }
 
-        // DELETE: api/Categories/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCategory(int id)
         {

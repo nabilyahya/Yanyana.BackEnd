@@ -12,7 +12,6 @@ namespace Yanyana.BackEnd.Core.Entities
         public int Value { get; set; } // Typically 1-5 stars
         public DateTime CreatedDate { get; set; } = DateTime.UtcNow;
 
-        // Relationships
         public int UserId { get; set; }
         public User User { get; set; }
 

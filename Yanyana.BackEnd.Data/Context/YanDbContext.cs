@@ -27,24 +27,36 @@ namespace Yanyana.BackEnd.Data.Context
         public DbSet<Country> Countries { get; set; }
         public DbSet<Street> Streets { get; set; }
         public DbSet<PlaceCategory> PlaceCategories { get; set; }
+        public DbSet<UserRole> UserRoles { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            // User Relationships
             modelBuilder.Entity<User>()
-                    .HasMany(u => u.Comments)
-                    .WithOne(u => u.User)
-                    .HasForeignKey(C => C.UserId)
-                    .OnDelete(DeleteBehavior.Cascade);
-                modelBuilder.Entity<User>()
-                    .HasOne(u => u.Role)
-                    .WithMany(r => r.Users)
-                    .HasForeignKey(u => u.RoleId)
-                    .OnDelete(DeleteBehavior.Restrict);
-                modelBuilder.Entity<User>()
-                    .HasMany(u => u.UserPictures)
-                    .WithOne(up => up.User)
-                    .HasForeignKey(up => up.UserId)
-                    .OnDelete(DeleteBehavior.Cascade);
+                .HasMany(u => u.UserRoles)
+                .WithOne(ur => ur.User)
+                .HasForeignKey(ur => ur.UserId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            // Role Relationships
+            modelBuilder.Entity<Role>()
+                .HasMany(r => r.UserRoles)
+                .WithOne(ur => ur.Role)
+                .HasForeignKey(ur => ur.RoleId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            // UserRole Relationships
+            modelBuilder.Entity<UserRole>()
+                .HasOne(ur => ur.User)
+                .WithMany(u => u.UserRoles)
+                .HasForeignKey(ur => ur.UserId)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<UserRole>()
+                .HasOne(ur => ur.Role)
+                .WithMany(r => r.UserRoles)
+                .HasForeignKey(ur => ur.RoleId)
+                .OnDelete(DeleteBehavior.Cascade);
 
             modelBuilder.Entity<PlaceCategory>()
                 .HasKey(pc => new { pc.PlaceId, pc.CategoryId });

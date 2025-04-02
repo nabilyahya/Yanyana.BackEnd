@@ -5,9 +5,14 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+	  <ShadowCopyFiles>false</ShadowCopyFiles>
+	  <AssemblyName>Yanyana.BackEnd.Api.Test</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="8.0.14" />
+    <PackageReference Include="Microsoft.AspNetCore.TestHost" Version="8.0.14" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="8.0.14" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.13.0" />
     <PackageReference Include="Moq" Version="4.20.72" />
     <PackageReference Include="xunit" Version="2.9.3" />
@@ -21,7 +26,11 @@
   <ItemGroup>
     <ProjectReference Include="..\Yanyana.BackEnd.Business\Yanyana.BackEnd.Business.csproj" />
     <ProjectReference Include="..\Yanyana.BackEnd.Core\Yanyana.BackEnd.Core.csproj" />
+    <ProjectReference Include="..\Yanyana.BackEnd.Data\Yanyana.BackEnd.Data.csproj" />
     <ProjectReference Include="..\Yanyana.BackEnd\Yanyana.BackEnd.Api.csproj" />
   </ItemGroup>
+	<Target Name="CopyDepsFile" AfterTargets="Build">
+		<Copy SourceFiles="..\Yanyana.BackEnd\bin\$(Configuration)\net8.0\Yanyana.BackEnd.Api.deps.json" DestinationFiles="$(OutputPath)testhost.deps.json" OverwriteReadOnlyFiles="true" />
+	</Target>
 
 </Project>

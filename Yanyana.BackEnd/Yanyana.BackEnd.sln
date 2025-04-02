@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YanYana.Lambda", "..\YanYan
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{8D428936-0EFE-4D1B-BE11-622898E52CA5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yanyana.BackEnd.Api.Test", "..\YanYana.BackEnd.Api.Test\Yanyana.BackEnd.Api.Test.csproj", "{A9DEBB44-B943-489E-8EE7-0BD196D75CA9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yanyana.BackEnd.Api.Test", "..\Yanyana.BackEnd.Api.Test\Yanyana.BackEnd.Api.Test.csproj", "{A9DEBB44-B943-489E-8EE7-0BD196D75CA9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yanyana.Lambda.Test", "..\Yanyana.Lambda.Test\Yanyana.Lambda.Test.csproj", "{25D4B1A7-B571-4EED-8FB3-2CC2DFCE4A60}"
 EndProject

@@ -12,8 +12,7 @@ namespace Yanyana.BackEnd.Core.Entities
         public string Name { get; set; }
         public string Description { get; set; }
         public DateTime CreatedDate { get; set; } = DateTime.UtcNow;
-        public DateTime ModifiedDate { get; set; } = DateTime.UtcNow;
 
-        public ICollection<User> Users { get; set; }
+        public ICollection<UserRole> UserRoles { get; set; }
     }
 }

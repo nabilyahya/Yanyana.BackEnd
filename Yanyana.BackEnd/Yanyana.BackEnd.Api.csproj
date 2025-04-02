@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -6,6 +6,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>b5123600-294c-46d2-a775-1bb9c4d427aa</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+	  <PreserveCompilationContext>true</PreserveCompilationContext>
+	  <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
     <DockerfileContext>.</DockerfileContext>
   </PropertyGroup>
 

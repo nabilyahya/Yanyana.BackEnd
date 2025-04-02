@@ -1,10 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static System.Runtime.InteropServices.JavaScript.JSType;
+using System.Security.Claims;
+using Yanyana.BackEnd.Core.Enums;
 
 namespace Yanyana.BackEnd.Core.Entities
 {
@@ -19,15 +16,13 @@ namespace Yanyana.BackEnd.Core.Entities
         public DateTime CreatedDate { get; set; } = DateTime.UtcNow;
         public DateTime ModifiedDate { get; set; } = DateTime.UtcNow;
         public bool IsDeleted { get; set; } = false;
-
-        // Relationships
-        public int RoleId { get; set; }
         public Role Role { get; set; }
 
-        public ICollection<UserPicture>  UserPictures { get; set; }
-
+        public ICollection<UserRole> UserRoles { get; set; }
+        public ICollection<UserPicture> UserPictures { get; set; }
         public ICollection<Comment> Comments { get; set; }
         public ICollection<Rate> Rates { get; set; }
         public ICollection<Place> FavoritePlaces { get; set; }
+        public List<Claim> Claims { get; set; }
     }
 }
